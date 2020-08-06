@@ -31,7 +31,7 @@ const Login = (props) => {
         props.history.push("/");
       })
       .catch((error) => {
-        console.log(error.response.data);
+        console.error(error.response.data);
         setErrors(error.response.data);
         setLoading(false);
       });
